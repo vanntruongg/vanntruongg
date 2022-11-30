@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <foreignObject x="20" y="20" width="160" height="160">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+            </style>
+                        
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Russo+One&display=swap" rel="stylesheet">
+
+            <div class="contentWrapper">
+                <div class="bg"></div>
+                <div class="barWrapper">
+                    <div class="bar"></div>
+                </div>
+                <div class="contentWrapper">
+                <div class="mainContent flexCenter">
+                    <div class="maskOut getCreative">
+                        <div class="mask"><div>
+                            <span class="thin">Java</span>
+                        </div>
+                    </div>
+                        <div class="mask"><div>CREATIVE</div></div>
+                    </div>
+                    <div class="maskOut haveFun">
+                        <div class="mask">
+                            <div>
+                                <span class="thin">HAVE</span>
+                            </div>
+                        </div>
+                        <div class="mask">
+                            <div>FUN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+                        
+            * {
+                position:relative;
+                width:100%;
+            }
+
+            body, html {
+                width:100%;
+                height:100%;
+            }
+
+            body {
+                margin:0;
+                font-family:"Kanit";
+                font-size:1.4em;
+                background:black;
+                overflow:hidden;
+                background: #1D022B; 
+            }
+
+
+            .bg {
+                width:100%;
+                height:100%;
+                position:absolute;
+                background: linear-gradient(0deg, rgba(0,0,0,1) 4%, rgba(0,0,0,0) 40%), 
+                    radial-gradient(circle at 20% 70%, #8C0082 0%, #170024 65%);
+            }
+
+            .barWrapper {
+                width:100%;
+                height:100%;
+                overflow:hidden;
+                position:absolute;
+            }
+            .bar {
+                width:80%;
+                height:200vh;
+                background:rgba(222,31,190,0.5);
+                transform:translate(30%, -20%)  rotate(25deg);
+                mix-blend-mode: overlay;
+                position:absolute;
+            }
+
+            .mainContent {
+                margin-top:20px;
+                position:relative;
+                width:90%;
+                color:white;
+                height:100%;
+            }
+
+            .contentWrapper {
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                overflow:hidden;
+                padding-bottom:80px;
+                width:100%;
+                position:relative;
+                height:100%;
+            }
+
+
+
+            .flexCenter {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+            }
+
+
+
+
+
+            .maskOut {
+                width:fit-content;
+                font-weight:800;
+                font-size:clamp(20px, calc(100vw/8), 4em);
+                line-height:0.8em;
+                
+                display:flex;
+            }
+
+            .mask {
+                overflow:hidden;
+                width:fit-content;
+            }
+
+            .thin {
+                font-weight:200;
+            }
+
+            const tl = gsap
+            .timeline({ repeat: 10, repeatDelay: 1 })
+            .from(".mask div", {
+                xPercent: gsap.utils.wrap([100, -100]),
+                stagger: 0.4,
+                opacity: 0,
+                ease: "circ.inOut"
+            })
+            .to(
+                ".mask div",
+                {
+                    opacity: 0,
+                    yPercent: gsap.utils.wrap([-100, 100]),
+                    duration: 1,
+                    ease:"none"
+                },
+                ">0.5"
+            );
+
+        gsap.fromTo(".bar", {x:-200}, {x:200, duration:20, ease:"none", repeat:3, yoyo:true})
+        // start learning GreenSock for free
+        // https://www.creativeCodingClub.com
+
+        </div>
+    </foreignObject>
+</svg>  
