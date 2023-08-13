@@ -1,10 +1,10 @@
 ### Hi there 👋
-<!-- <img
-height="100"
-width="320"
+<img
+height="200px"
+width="400px"
 align="right"
-src="images/java-spring.gif"
-/> -->
+src="images/Coding workshop-amico.png"
+/> 
 👋 Hi, I'm Van Truong<br>
 🌱 I’m currently learning Java<br>
 😄I'm studying information systems at [Can Tho University](https://www.ctu.edu.vn/).
