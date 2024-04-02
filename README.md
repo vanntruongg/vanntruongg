@@ -54,7 +54,7 @@
 </p>
 
 
-<div style="text-align: center;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <div style="margin-bottom: 10px;">
         <img style="display: block; margin: 0 auto;" src="https://github-readme-stats.vercel.app/api/top-langs?username=vanntruongg&show_icons=true&locale=en&layout=compact" alt="vanntruongg" />
     </div>
