@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Tran Van Truong</h1>
 <h3 align="center">I'm final-year student specializing in Information Systems at Can Tho University.</h3>
-![github-header-image](https://github.com/vanntruongg/vanntruongg/assets/103330978/fb7f1d02-677e-4e25-ab9d-36f9a85ec05c)
+<img src="./images/github-header-image.png"  alt="img header"/>
 
 - 🌱 I’m currently learning **Java**
 
